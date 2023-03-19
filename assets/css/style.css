@@ -22,3 +22,75 @@ html {
 4. Kiểu dáng (kiểu chữ, hình tròn, vuông,...)
 */
 
+#main {
+
+}
+
+#header {
+    height: 46.5px;
+    background-color: #000;
+}
+
+#nav {
+
+}
+
+#nav > li  {
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li:hover .subnav  {
+    display: block;
+}
+
+#nav > li > a {
+    line-height: 46.5px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 24px;
+    text-transform: uppercase;
+}
+
+#nav > li:hover > a,
+#nav .subnav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   
+}
+
+#nav .subnav li {
+    line-height: 38.5px;
+    list-style-type: none;
+}
+
+#nav .subnav > li > a {
+    min-width: 160px;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    padding: 0 16px;
+   
+}
+
+#slider {
+   
+}
+
+#content {
+
+}
+
+#footer {
+
+}
