@@ -31,8 +31,24 @@ html {
     background-color: #000;
 }
 
-#nav {
+#header .search-btn {
+    float: right;
+    
+}
 
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#header .header-search-icon {
+    color: #fff;
+    line-height: 46.5px;
+    padding: 0 23px;
+}
+
+#nav {
+    display: inline-block;
 }
 
 #nav > li  {
