@@ -29,6 +29,10 @@ html {
 #header {
     height: 46.5px;
     background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #header .search-btn {
@@ -104,7 +108,7 @@ html {
 }
 
 #slider {
-   
+    margin-top: 46.5px;
 }
 
 #content {
