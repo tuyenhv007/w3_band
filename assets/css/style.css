@@ -167,8 +167,38 @@ html {
     text-align: justify;
     line-height: 1.4;
     margin-top: 25px;
+    margin-bottom: 15px;
 
 }
+
+#content .list-member {
+    text-align: center;
+    padding: 32px 0;
+}
+
+#content .list-item {
+    float: left;
+    width: 33.33333%;
+
+}
+
+#content .member-name {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+#content .member-avatar {
+
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+
+}
+
+#content .clear {
+    clear: both;
+}
+
 
 
 #footer {
