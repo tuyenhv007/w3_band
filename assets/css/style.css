@@ -138,6 +138,39 @@ html {
 
 }
 
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+    margin-top: 10px;
+}
+
+#content .content-heading {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+#content .content-sub-heading {
+    text-align: center;
+    opacity: 0.6;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 25px;
+
+}
+
+#content .about-text {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 25px;
+
+}
+
+
 #footer {
 
 }
