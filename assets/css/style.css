@@ -10,7 +10,7 @@ html {
 }
 
 .text-white {
-    color: #fff;
+    color: #fff !important;
 }
 
 /* 
@@ -155,6 +155,7 @@ html {
     font-weight: 400;
     letter-spacing: 4px;
     font-size: 30px;
+    margin-top: 20px;
 }
 
 #content .content-sub-heading {
@@ -241,6 +242,65 @@ html {
     margin-top: -3px;
     margin-right: 8px;
 }
+
+.places-section {
+    margin: 32px -8px 32px;
+}
+
+.place-item {
+    float: left;
+    width: 33.33333%;
+    padding: 8px;
+
+}
+
+.place-img {
+    width: 100%;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+
+.place-infor {
+    background-color: #fff;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.place-heading {
+    font-weight: 600;
+}
+
+.place-time {
+    margin-top: 15px;
+    opacity: 0.6;
+}
+
+.place-description {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.ticket-buy-button {
+    margin-top: 15px;
+    margin-top: 15px;
+    display: block;
+    width: 108px;
+    height: 38px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 38px;
+}
+
+.ticket-buy-button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
 
 /* Contact Css */
 
