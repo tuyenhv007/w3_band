@@ -310,7 +310,7 @@ html {
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.4);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     
@@ -321,6 +321,7 @@ html {
     width: 900px;
     max-width: calc(100% - 32px);
     position: relative;
+    animation: modalFadeIn ease .4s;
 }
 
 .modal-header {
@@ -396,6 +397,22 @@ html {
 
 .modal-help a {
     color: #2196F3;
+}
+
+.modal.open {
+    display: flex;
+}
+
+/* Hiệu ứng hiện modal  */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
