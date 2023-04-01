@@ -6,6 +6,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,15 +19,64 @@ html {
     text-align: center !important;
 }
 
+.pull-right {
+    float: right !important;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+
+.btn {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 11px 16px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+
 .row {
     margin-right: -8px;
     margin-left: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .col {
     float: left;
     padding-left: 8px;
     padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-two {
+    width: 50%;
 }
 
 .col-third {
@@ -165,10 +215,9 @@ html {
 
 #content .content-section {
     width: 800px;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
-    margin-top: 10px;
 }
 
 #content .content-heading {
@@ -176,7 +225,6 @@ html {
     font-weight: 400;
     letter-spacing: 4px;
     font-size: 30px;
-    margin-top: 20px;
 }
 
 #content .content-sub-heading {
@@ -259,11 +307,11 @@ html {
 
 .places-section {
     margin-top: 32px;
-    margin-bottom: 32px;
 }
 
 .place-img {
     width: 100%;
+    display: block;
 }
 
 .place-img:hover {
@@ -291,25 +339,7 @@ html {
     line-height: 1.4;
 }
 
-.ticket-buy-button {
-    margin-top: 15px;
-    margin-top: 15px;
-    display: block;
-    width: 108px;
-    height: 38px;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    line-height: 38px;
-    border: none;
-    cursor: pointer;
-}
 
-.ticket-buy-button:hover {
-    color: #000;
-    background-color: #ccc;
-}
 
 /* Modal Css */
 .modal {
@@ -426,10 +456,62 @@ html {
 
 
 /* Contact Css */
+.contact-content .contact-info {
+    font-size: 18px;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.contact-content .contact-form {
+
+}
+
+.contact-content .form-control {
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.map-section img {
+    width: 100%;
+}
 
 
 
 
 #footer {
+    padding: 64px 16px;
+    text-align: center;
+    
+}
 
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .social-list a:hover,
+#footer .copyright a:hover
+{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 15px;
+}
+
+#footer .copyright a {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
 }
