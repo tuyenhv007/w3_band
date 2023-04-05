@@ -111,6 +111,13 @@ html {
     overflow: hidden;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
 #header .mobile-menu-btn,
 #header .search-btn {
     float: right;
@@ -154,7 +161,7 @@ html {
 #nav > li > a {
     line-height: 46.5px;
     color: #fff;
-    display: inline-block;
+    display: block;
     text-decoration: none;
     padding: 0 24px;
     text-transform: uppercase;
