@@ -108,10 +108,13 @@ html {
     right: 0;
     background-color: #000;
     z-index: 1;
+    overflow: hidden;
 }
 
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
+    padding: 0 21px;
     
 }
 
@@ -120,10 +123,19 @@ html {
     background-color: #f44336;
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .mobile-menu-icon{
+    color: #000;
+}
+
+#header .mobile-menu-icon,
 #header .header-search-icon {
     color: #fff;
+    font-size: 20px;
     line-height: 46.5px;
-    padding: 0 23px;
 }
 
 #nav {

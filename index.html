@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
 </head>
@@ -19,7 +20,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -30,6 +31,9 @@
                     </ul>
                 </li>
             </ul>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="mobile-menu-icon ti-menu"></i>
+            </div>
             <div class="search-btn">
                 <i class="header-search-icon ti-search"></i>
             </div>
@@ -191,6 +195,29 @@
    </div>
 
 <script>
+    // Đóng/mở mobile menu
+    var header = document.getElementById('header');
+    var mobileMenu = document.getElementById('mobile-menu');
+    var headerHeight = header.clientHeight;
+
+    mobileMenu.onclick = function () {
+        var isClosed = header.clientHeight === headerHeight;
+        if (isClosed) {
+            header.style.height = 'auto';
+        } else {
+            header.style.height = null;
+        }
+    }
+
+    var menuItems = document.querySelectorAll('#nav > li > a[href*="#"]');
+    for (let i = 0; i < menuItems.length; i++) {
+        const menuItem = menuItems[i];
+        menuItem.onclick = function () {
+            header.style.height = null;
+        }
+    }
+
+
     const buyBtns = document.querySelectorAll('.js-buy-ticket');
     const modal = document.querySelector('.modal');
     const closeModal = document.querySelector('.js-modal-close');
