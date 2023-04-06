@@ -108,7 +108,6 @@ html {
     right: 0;
     background-color: #000;
     z-index: 1;
-    overflow: hidden;
 }
 
 #header .mobile-menu-btn {
@@ -235,7 +234,7 @@ html {
 #content .content-section {
     width: 800px;
     max-width: 100%;
-    padding: 64px 0 112px;
+    padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
     padding-right: 16px;
@@ -263,7 +262,7 @@ html {
     text-align: justify;
     line-height: 1.4;
     margin-top: 25px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 
 }
 
@@ -272,7 +271,6 @@ html {
 }
 
 #content .member-name {
-    margin-top: 15px;
     font-size: 15px;
 }
 
@@ -328,7 +326,7 @@ html {
 }
 
 .places-section {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
