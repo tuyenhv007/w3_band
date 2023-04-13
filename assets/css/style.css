@@ -491,6 +491,15 @@ html {
     line-height: 1.5;
 }
 
+.contact-info a {
+    color: #004ff2;
+    opacity: 0.6;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
+
 .contact-content .contact-form {
 
 }

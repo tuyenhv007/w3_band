@@ -3,6 +3,39 @@
 
 }
 
+/* Tablet & Mobile */
+
+@media(max-width: 1023px) {
+    .btn {
+        padding: 15px 16px;
+    }
+
+    #nav .subnav > li > a {
+        padding: 5px 12px;
+    }
+
+    .contact-content .form-control {
+        padding: 14px;
+    }
+
+    .contact-info i[class*="ti-"] {
+        line-height: 2;
+    }
+
+    #footer .social-list {
+        font-size: 48px;
+    }
+
+    #footer .social-list a {
+        margin: 0 8px;
+    }
+
+    #footer .copyright a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+
 /* Tablet */
 @media(min-width: 740px) and (max-width: 1023px) {
 
@@ -63,11 +96,14 @@
         padding: 0 41px;
     }
 
-   
-
     #content .member-avatar {
         width: 60%;
     }
+
+    .contact-content .contact-form {
+        margin-top: 32px;
+    }
+        
   
 
     
