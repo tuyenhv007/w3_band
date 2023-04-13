@@ -10,6 +10,18 @@
 
 /* Mobile */
 @media(max-width: 740px) {
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px;
+    }
+
+    .s-mt-16 {
+        margin-top: 16px;
+    }
 
     #header {
         overflow: hidden;
@@ -51,9 +63,7 @@
         padding: 0 41px;
     }
 
-    .s-col-full {
-        width: 100%;
-    }
+   
 
     #content .member-avatar {
         width: 60%;
